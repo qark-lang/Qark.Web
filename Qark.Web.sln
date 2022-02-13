@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.32112.339
+VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qark.Web", "Qark.Web\Qark.Web.csproj", "{731304DB-35B0-4D5F-B9EA-280A845313BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qark.Web", "Qark.Web\Qark.Web.csproj", "{BC2C259C-AC59-482E-A5B2-766CF40A7171}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{731304DB-35B0-4D5F-B9EA-280A845313BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{731304DB-35B0-4D5F-B9EA-280A845313BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{731304DB-35B0-4D5F-B9EA-280A845313BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{731304DB-35B0-4D5F-B9EA-280A845313BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2C259C-AC59-482E-A5B2-766CF40A7171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2C259C-AC59-482E-A5B2-766CF40A7171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2C259C-AC59-482E-A5B2-766CF40A7171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2C259C-AC59-482E-A5B2-766CF40A7171}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A81FD9B3-CD0B-4427-986C-96990B9D2817}
+		SolutionGuid = {5DF52952-DBD5-4BE3-9CCB-4154DB2544A0}
 	EndGlobalSection
 EndGlobal
