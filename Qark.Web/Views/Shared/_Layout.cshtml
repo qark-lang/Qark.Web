@@ -1,118 +1,90 @@
 ﻿@{
-    var title = ViewData["Title"] != null ? $"{ViewData["Title"]} | Qark Programming Language" : "Qark Programming Language";
+    var name = "Qark Programming Language";
+    var title = ViewData["Title"] != null ? $"{ViewData["Title"]} | {name}" : name;
+    var description = "Object-oriented, general-purpose, fast, compiled programming language";
 }
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>@title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Object-oriented, general-purpose, fast, compiled programming language" />
+    <meta name="description" content="@description" />
     <meta name="keywords" content="Qark, programming language, compiled, object-oriented, imperative, multi-paradigm, general-purpose, system, native" />
     <meta name="author" content="Qark Team" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#4a4b65" />
     <meta name="theme-color" content="#ffffff" />
     <meta property="og:url" content="https://qark.dev" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Qark Programming Language" />
-    <meta property="og:site_name" content="@title" />
-    <meta property="og:description" content="Object-oriented, general-purpose, fast, compiled programming language" />
+    <meta property="og:title" content="@title" />
+    <meta property="og:site_name" content="@name" />
+    <meta property="og:description" content="@description" />
     <meta property="og:image" content="https://qark.dev/qark-social.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Qark Programming Language" />
+    <meta property="og:image:alt" content="@name" />
     <meta name="twitter:title" content="@title" />
-    <meta name="twitter:description" content="Object-oriented, general-purpose, fast, compiled programming language" />
+    <meta name="twitter:description" content="@description" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@@qarklang">
+    <title>@title</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="~/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="~/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicon-16x16.png" />
+    <link rel="manifest" href="~/site.webmanifest" />
+    <link rel="mask-icon" href="~/safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="stylesheet" media="screen" href="~/dist/site.css" />
     <partial name="GoogleAnalytics" />
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-            </a>
-
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item">
-                    Home
+    <nav class="navbar is-light" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" asp-controller="Home" asp-action="Index">
+                    <img src="~/qark-logo.svg" width="28" height="28" alt="Qark" />
+                    <span class="subtitle mx-3">Qark</span>
                 </a>
-
-                <a class="navbar-item">
-                    Documentation
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            About
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Contact
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Report an issue
-                        </a>
-                    </div>
-                </div>
             </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary">
-                            <strong>Sign up</strong>
-                        </a>
-                        <a class="button is-light">
-                            Log in
-                        </a>
+            <div id="navbarMain" class="navbar-menu">
+                <div class="navbar-start"></div>
+                <div class="navbar-end">
+                    <a class="navbar-item" asp-controller="Home" asp-action="Index">Home</a>
+                    <a class="navbar-item" asp-controller="Learn" asp-action="Index">Learn</a>
+                    <a class="navbar-item" asp-controller="Download" asp-action="Index">Download</a>
+                    <a class="navbar-item" asp-controller="Home" asp-action="Index" asp-fragment="community">Community</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Docs</a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" asp-controller="Reference" asp-action="Index">Language Reference</a>
+                            <a class="navbar-item" asp-controller="iCore" asp-action="Index">Library Reference</a>
+                            <a class="navbar-item" asp-controller="Compiler" asp-action="Index">Compiler Reference</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item field">
+                        <p class="control has-icons-right">
+                            <input id="search" class="input  is-rounded is-shadowless" type="search" placeholder="Search...">
+                            <span class="icon  is-right mdi mdi-24px mdi-magnify">
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                Hello World
-            </h1>
-            @RenderBody()
-        </div>
-    </section>
+    @RenderBody()
 
     <footer class="footer">
         <div class="content has-text-centered">
-            <p>
-                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-            </p>
+            <p>Copyright © @DateTime.Now.Year <a href="https://github.com/orgs/qark-lang/people">Qark Team</a></p>
+            <p>Qark is licensed under the <a asp-controller="Home" asp-action="License">MIT License</a></p>
         </div>
     </footer>
+    <script src="~/dist/site.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@ code[class*="language-"],
 pre[class*="language-"] {
     color: #363636;
     background: none;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-family: 'JetBrains Mono', Consolas, 'Ubuntu Mono', monospace;
     font-size: 15px;/*0.9375em;*/
     text-align: left;
     white-space: pre;

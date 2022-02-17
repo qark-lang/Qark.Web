@@ -762,8 +762,8 @@ Prism.languages.swift = Prism.languages.extend('clike', {
 });
 Prism.languages.swift['string'].inside['interpolation'].inside.rest = Prism.languages.swift;
 
-// Ion
-Prism.languages.ion = {
+// Qark
+Prism.languages.qark = {
     'comment': [
         {
             pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/,

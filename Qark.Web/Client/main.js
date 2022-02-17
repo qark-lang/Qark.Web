@@ -12,30 +12,18 @@
     }
 }
 
-function animateSubtitle() {
-    let el = document.getElementById('animatedText');
-    if (el) {
-        var typewriter = new Typewriter(el, {
-            strings: JSON.parse(el.getAttribute('data-strings')),
-            autoStart: true,
-            loop: true
-        });
-    }
-}
-
 function bindSearch() {
     document.getElementById('search').onkeydown = function (event) {
         if (event.keyCode === 13) {
             let el = document.getElementById('search');
             let q = el.value.trim();
             if (q)
-                window.open('https://google.com/search?q=' + q + ' site:ion-lang.org');
+                window.open('https://google.com/search?q=' + q + ' site:qark.dev');
         }
     };
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     menuBurger();
-    animateSubtitle();
     bindSearch();
 });

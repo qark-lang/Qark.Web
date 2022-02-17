@@ -17,8 +17,16 @@ namespace Qark.Web.Controllers
         {
             return View();
         }
+        public IActionResult Download()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult License()
         {
             return View();
         }
