@@ -57,7 +57,6 @@
                     <a class="navbar-item" asp-controller="Home" asp-action="Index">Home</a>
                     <a class="navbar-item" asp-controller="Learn" asp-action="Index">Learn</a>
                     <a class="navbar-item" asp-controller="Download" asp-action="Index">Download</a>
-                    <a class="navbar-item" asp-controller="Home" asp-action="Index" asp-fragment="community">Community</a>
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">Docs</a>
                         <div class="navbar-dropdown">
@@ -88,11 +87,6 @@
                                     <i class="bi bi-discord"></i>
                                 </span>
                             </a>
-                            <a class="button is-light" href="https://github.com/qark-lang/Qark/discussions" title="Forum">
-                                <span class="icon is-size-4">
-                                    <i class="bi bi-slack"></i>
-                                </span>
-                            </a>
                             <a class="button is-light" href="https://join.slack.com/t/qark/shared_invite/zt-7lxqcm85-P5egLm2I6LonH1G5vXPbpg" title="Slack">
                                 <span class="icon is-size-4">
                                     <i class="bi bi-slack"></i>
@@ -111,6 +105,9 @@
         <div class="content has-text-centered">
             <p>Copyright © @DateTime.Now.Year <a href="https://github.com/orgs/qark-lang/people">Qark Team</a></p>
             <p>Qark is licensed under the <a asp-controller="Home" asp-action="License">MIT License</a></p>
+            <a href="https://bulma.io">
+                <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+            </a>
         </div>
     </footer>
     <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
