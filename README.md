@@ -1,2 +1,1 @@
-# Qark.Web
-The Qark programming language website
+# The home of the Qark website
