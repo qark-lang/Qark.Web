@@ -30,6 +30,7 @@ function scripts(cb) {
 
 function dev(cb) {
     watch(['Client/**/*.scss', 'Client/**/*.sass', 'Client/**/*.css'], styles);
+    watch(['Client/**/*.js'], scripts);
     cb();
 }
 

@@ -52,32 +52,14 @@
                 </a>
             </div>
             <div id="navbarMain" class="navbar-menu">
-                <div class="navbar-start is-expanded">
-                    <div class="navbar-item">
-                        <p class="control has-icons-left has-icons-right">
-                            <input id="search" class="input _is-rounded is-small" type="search" placeholder="Search...">
-                            <span class="icon is-left">
-                                <i class="bi bi-search"></i>                                
-                            </span>
-                            <span class="icon is-right">
-                                <span class="tag is-light">/</span>                             
-                            </span>                            
-                        </p>
-                    </div>
+                <div class="navbar-start">
+                    
                 </div>
                 <div class="navbar-end">
                     <a class="navbar-item" asp-page="Index">Home</a>
                     <a class="navbar-item" asp-page="Learn">Learn</a>
                     <a class="navbar-item" asp-page="Download">Download</a>
                     <a class="navbar-item" asp-page="Docs">Docs</a>
-                    @*<div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">Docs</a>
-                        <div class="navbar-dropdown">
-                        <a class="navbar-item" asp-controller="Reference" asp-action="Index">Language Reference</a>
-                        <a class="navbar-item" asp-controller="iCore" asp-action="Index">Library Reference</a>
-                        <a class="navbar-item" asp-controller="Compiler" asp-action="Index">Compiler Reference</a>
-                        </div>
-                        </div>*@
                     <div class="navbar-item">
                         <div class="buttons">
                             <a class="button is-light" href="https://github.com/qark-lang" title="GitHub" target="_blank">
@@ -107,6 +89,17 @@
                             </a>
                         </div>
                     </div>
+                    <div class="navbar-item">
+                        <p class="control has-icons-left has-icons-right">
+                            <input id="search" class="input is-small  is-expanded" type="search" placeholder="Search">
+                            <span class="icon is-left">
+                                <i class="bi bi-search"></i>                                
+                            </span>
+                            <span class="icon is-right">
+                                <span class="tag is-light">/</span>                             
+                            </span>                            
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,16 +116,6 @@
             </a>
         </div>
     </footer>
-    <div id="modal-search" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <div class="box">
-                <p>Modal JS example</p>
-                <!-- Your content -->
-            </div>
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
     <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
     <script src="~/dist/site.js"></script>
 </body>
